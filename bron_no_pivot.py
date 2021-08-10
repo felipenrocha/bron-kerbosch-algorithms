@@ -10,7 +10,7 @@ def bron_kerb_algorithm_no_pivot(R, P, X):
         report R as a maximal clique
     for each vertex v in P do
         BronKerbosch1(R U v, P intersect N(v), X intersect N(v))
-        P := P -  v
+        P := P \  v
         X := X U v
         """
     golfinhos_txt = read_file('soc-dolphins.txt')

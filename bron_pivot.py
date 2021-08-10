@@ -15,6 +15,9 @@ def bron_kerb_algorithm_with_pivot(R, P, X):
             P := P \ {v}
             X := X ⋃ {v}
     """
+
+
+    
     golfinhos_txt = read_file('soc-dolphins.txt')
     lista = create_dolphin_list(golfinhos_txt)
 

@@ -13,12 +13,16 @@ def get_all_vertex(lista):
         vertices.append(int(key))
     return vertices
 
+# copied from https://www.geeksforgeeks.org/python-intersection-two-lists/ and
+# https://www.geeksforgeeks.org/python-union-two-lists/
+
 
 # Python program to illustrate the intersection
 # of two lists in most simple way
+
+
 def intersection(lst1, lst2):
-    # copied from https://www.geeksforgeeks.org/python-intersection-two-lists/ and
-    # https://www.geeksforgeeks.org/python-union-two-lists/
+    
     lst3 = [value for value in lst1 if value in lst2]
     return lst3
 
@@ -28,6 +32,8 @@ def union(lst1, lst2):
 
 
 def difference(lst1, lst2):
+    """return lst1 \ lst2"""
+    
     lista_difference = []
     for value in lst1:
         if value not in lst2:
@@ -65,15 +71,16 @@ def create_dolphin_list(txt):
         }
 
         vertices_adjacentes = [v1, v2, v3],    vn Inteiro
+
+        obs.: o código é meio confuso devido a forma como está escrito o soc-doplhins.txt e nao queria alterá-lo
     """
 
     lista_golfinhos = {}
 
     # divide o texto a partir da string do arquivo, so precisamos da 2a posicao que eh onde estao os numeros:
-    txtNumeros = txt.split(
-        "62 62 159")[1]
+    txtNumeros = txt.split("62 62 159")[1]
 
-    # dividindo os espacos para resultar em uma aray com os valores separados por um espaco ex.: ["11 1"]
+    # dividindo os espacos para resultar em uma array com os valores separados por um espaco ex.: ["11 1"]
     txtArray = txtNumeros.split("\n")
 
     # variavel responsavel por manter o vertice atual da lista
@@ -122,3 +129,6 @@ def create_dolphin_list(txt):
                 lista_golfinhos[vertice_atual] = vertices_adjacentes
 
     return lista_golfinhos
+
+
+    
