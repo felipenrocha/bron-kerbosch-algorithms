@@ -1,5 +1,5 @@
 
-from bron import create_dolphin_list, difference, get_all_vertex, neighbor, union, read_file, intersection
+from bron import create_dolphin_list, difference, neighbor, union, read_file, intersection
 import random
 
 def bron_kerb_algorithm_with_pivot(R, P, X):

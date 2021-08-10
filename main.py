@@ -4,6 +4,7 @@
 from bron_no_pivot import bron_kerb_algorithm_no_pivot
 from bron_pivot import bron_kerb_algorithm_with_pivot
 from bron import read_file, create_dolphin_list, get_all_vertex
+from clustering import average_cluster
 
 import os
 
@@ -41,6 +42,6 @@ def interface():
        
        
         elif int(menu_selection) == 4:
-            print("Coeficiente médio de Aglomeração do Grafo: ")
+            print("Coeficiente médio de Aglomeração do Grafo: ", average_cluster(lista=lista_adjacencia_golfinhos))
 
 main()
