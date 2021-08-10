@@ -2,6 +2,8 @@ from bron import create_dolphin_list, difference, neighbor, union, read_file, in
 
 
 def average_cluster(lista):
+    """lista de adjacencia -> float"""
+
     soma = 0
     i = 0
     for v in lista:

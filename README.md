@@ -1,2 +1,0 @@
-# bron-kerbosch-algorithms
-
